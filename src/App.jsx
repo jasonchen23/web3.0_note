@@ -4,12 +4,12 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const [msg, setMsg] = useState('hello world')
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>{msg}</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
